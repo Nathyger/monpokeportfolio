@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue dans mon Portfolio</h1>
+            <p>Découvrez mes projets et compétences avec un style Pokémon unique</p>
+            <p>Monvoisin Nathan</p>
+            <button id="discoverBtn">Découvrir</button>
+        </div>
+        <div class="pokeball-hero"></div>
+    </header>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <main id="portfolio" class="portfolio hidden">
+
+        <!-- À propos -->
+        <section class="card about">
+            <h2>À propos de moi</h2>
+            <p>Je suis passionné par le développement, les jeux vidéo et l’électronique. J'aime créer des projets originaux et interactifs !</p>
+        </section>
+
+        <!-- Compétences -->
+        <section class="card skills">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Html & Css</li>
+                <li>javascript</li>
+                <li>Freelance</li>
+            </ul>
+        </section>
+
+        <!-- Projets -->
+        <section class="card projects">
+            <h2>Projets</h2>
+            <div class="project-item">
+                <h3>Mini-jeu Pokémon C++</h3>
+                <p>Un petit jeu Pokémon pour PC développé en C++.</p>
+                <a href="projets/minijeu_pokemon.zip" download>Télécharger</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="card contact">
+            <h2>Contact</h2>
+            <p>Email : <a href="nathanmonvoisin15@gmail.com">nathanmonvoisin15@gmail.com</a></p>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        &copy; 2026 Mon Portfolio - Tous droits réservés
+    </footer>
+
+    <!-- ================= SCRIPT ================= -->
+    <script>
+        const discoverBtn = document.getElementById("discoverBtn");
+        const portfolio = document.getElementById("portfolio");
+
+        discoverBtn.addEventListener("click", () => {
+            portfolio.classList.remove("hidden");
+            portfolio.scrollIntoView({ behavior: "smooth" });
+
+            // Animation lente des cartes
+            const cards = document.querySelectorAll(".card");
+            cards.forEach((card, index) => {
+                setTimeout(() => card.classList.add("active"), index * 500);
+            });
+        });
+    </script>
+
+</body>
+</html>
