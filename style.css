@@ -1,0 +1,155 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+    background: linear-gradient(to bottom, #f5f5f5, #fff);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to right, #fcd34d, #f87171);
+    color: white;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeInUp 2s ease forwards;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    animation: fadeInUp 2.5s ease forwards;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background: #fbbf24;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+/* Pokéball animée */
+.pokeball-hero {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: red;
+    top: 20%;
+    right: 10%;
+    animation: bounce 4s ease-in-out infinite;
+}
+
+/* ================= PORTFOLIO ================= */
+.portfolio {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills */
+.skills ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background: #f87171;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.skills li:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(248,113,113,0.6);
+}
+
+/* Projects */
+.project-item {
+    margin: 20px 0;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #3b82f6;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.project-item a:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(59,130,246,0.6);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #111;
+    color: white;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-20px);}
+}
