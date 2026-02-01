@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0; padding: 0;
+    background: linear-gradient(to right, #f6d365, #fda085);
+    color: #fff;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+input, button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover { transform: scale(1.05); cursor: pointer; }
+
+#login-screen, #game-screen { display: flex; flex-direction: column; align-items: center; width: 100%; min-height: 100vh; }
+.active { display: flex; }
+.hidden { display: none; }
+
+header { display: flex; justify-content: space-between; width: 90%; margin-bottom: 20px; align-items: center; }
+
+section { margin: 15px; padding: 20px; border-radius: 15px; background: rgba(0,0,0,0.25); width: 90%; max-width: 600px; transition: transform 0.3s ease, background 0.3s ease; }
+section:hover { transform: translateY(-5px); background: rgba(0,0,0,0.35); }
+
+.pokemon-list, #shop-items { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+
+.pokemon-card, .shop-card, .book-card {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 120px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.pokemon-card:hover, .shop-card:hover, .book-card:hover {
+    background: rgba(255,255,255,0.4);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255,255,255,0.6);
+}
+
+#combat-message, #challenge-result { margin: 10px 0; font-weight: bold; font-size: 18px; text-shadow: 1px 1px 2px #000; }
+
+#attackBtn { background: #ffcc00; color: #000; font-weight: bold; box-shadow: 0 0 10px #fff; }
+
+#shop { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background: rgba(0,0,0,0.9); padding: 20px; border-radius: 15px; z-index: 1000; }

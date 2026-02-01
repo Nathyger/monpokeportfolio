@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDéfi</title>
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+
+    <!-- ===== PAGE D'ACCUEIL ===== -->
+    <div id="login-screen" class="active">
+        <h1>PokéDéfi</h1>
+        <input type="text" id="username" placeholder="Nom d'utilisateur">
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button id="loginBtn">Commencer</button>
+        <p id="login-message"></p>
+    </div>
+
+    <!-- ===== ÉCRAN DE JEU ===== -->
+    <div id="game-screen">
+        <header>
+            <h2>Bienvenue <span id="player-name"></span> !</h2>
+            <p>💰 Pièces : <span id="coins">0</span></p>
+            <button id="shopBtn">Boutique</button>
+            <button id="logoutBtn">Déconnexion</button>
+        </header>
+
+        <section id="challenge-section">
+            <h3>Mode Défi</h3>
+            <p>Sélectionne ton Pokémon :</p>
+            <div id="player-pokemons" class="pokemon-list"></div>
+            <button id="challengeBtn">Lancer le défi</button>
+            <p id="challenge-result"></p>
+        </section>
+
+        <section id="combat-section" class="hidden">
+            <h3>Combat en cours</h3>
+            <p id="combat-message"></p>
+            <button id="attackBtn" class="hidden">Attaquer !</button>
+        </section>
+
+        <section id="pokemon-book">
+            <h3>Pokédex</h3>
+        </section>
+
+        <div id="shop" class="hidden">
+            <h3>Boutique</h3>
+            <div id="shop-items"></div>
+            <button id="closeShopBtn">Fermer</button>
+        </div>
+    </div>
+
+    <script src="pokemon.js"></script>
+</body>
+</html>

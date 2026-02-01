@@ -1,0 +1,22 @@
+[
+  {"id":1,"name":"Flarix","atk":10,"pv":35,"rarity":1},
+  {"id":2,"name":"Aquazor","atk":12,"pv":40,"rarity":2},
+  {"id":3,"name":"Terradon","atk":14,"pv":45,"rarity":2},
+  {"id":4,"name":"Voltis","atk":9,"pv":30,"rarity":1},
+  {"id":5,"name":"Pyroko","atk":15,"pv":50,"rarity":3},
+  {"id":6,"name":"Lumina","atk":8,"pv":25,"rarity":1},
+  {"id":7,"name":"Glacior","atk":13,"pv":40,"rarity":2},
+  {"id":8,"name":"Spirix","atk":11,"pv":35,"rarity":2},
+  {"id":9,"name":"Mystagon","atk":17,"pv":55,"rarity":4},
+  {"id":10,"name":"Rocflame","atk":16,"pv":50,"rarity":3},
+  {"id":11,"name":"Tornadus","atk":12,"pv":42,"rarity":2},
+  {"id":12,"name":"Cobaltrix","atk":18,"pv":60,"rarity":5},
+  {"id":13,"name":"Venomix","atk":14,"pv":45,"rarity":3},
+  {"id":14,"name":"Hydragon","atk":20,"pv":70,"rarity":5},
+  {"id":15,"name":"Electryx","atk":11,"pv":38,"rarity":2},
+  {"id":16,"name":"Floragon","atk":9,"pv":32,"rarity":1},
+  {"id":17,"name":"Obscurion","atk":19,"pv":65,"rarity":5},
+  {"id":18,"name":"Pyrolith","atk":13,"pv":40,"rarity":2},
+  {"id":19,"name":"Aqualith","atk":12,"pv":36,"rarity":2},
+  {"id":20,"name":"Mysticor","atk":17,"pv":55,"rarity":4}
+]
